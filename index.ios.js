@@ -9,11 +9,17 @@ var {
   NativeModules: {
     SFSafariViewController,
   },
+  processColor,
 } = React;
 
 var RCTSFSafariViewControllerExport = {
   open: function(url, options={}) {
-    SFSafariViewController.openURL(url, options);
+    var parsedOptions = {};
+
+    if(options.tintColor)
+      parsedOptions.tintColor = processColor(options.tintColor);
+
+    SFSafariViewController.openURL(url, parsedOptions);
   },
 };
 

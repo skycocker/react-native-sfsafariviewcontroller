@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6524D41D1D2FB11A0060C92E /* RCTFSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524D41C1D2FB11A0060C92E /* RCTFSafariViewController.m */; };
+		6524D41D1D2FB11A0060C92E /* RCTSFSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524D41C1D2FB11A0060C92E /* RCTSFSafariViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6524D40F1D2FAE0F0060C92E /* libRCTFSafariViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTFSafariViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6524D41B1D2FB1060060C92E /* RCTFSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFSafariViewController.h; sourceTree = "<group>"; };
-		6524D41C1D2FB11A0060C92E /* RCTFSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTFSafariViewController.m; sourceTree = "<group>"; };
+		6524D40F1D2FAE0F0060C92E /* libRCTSFSafariViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTSFSafariViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6524D41B1D2FB1060060C92E /* RCTSFSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSFSafariViewController.h; sourceTree = "<group>"; };
+		6524D41C1D2FB11A0060C92E /* RCTSFSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTSFSafariViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +42,8 @@
 		6524D4061D2FAE0F0060C92E = {
 			isa = PBXGroup;
 			children = (
-				6524D41B1D2FB1060060C92E /* RCTFSafariViewController.h */,
-				6524D41C1D2FB11A0060C92E /* RCTFSafariViewController.m */,
+				6524D41B1D2FB1060060C92E /* RCTSFSafariViewController.h */,
+				6524D41C1D2FB11A0060C92E /* RCTSFSafariViewController.m */,
 				6524D4101D2FAE0F0060C92E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 		6524D4101D2FAE0F0060C92E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6524D40F1D2FAE0F0060C92E /* libRCTFSafariViewController.a */,
+				6524D40F1D2FAE0F0060C92E /* libRCTSFSafariViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +59,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6524D40E1D2FAE0F0060C92E /* RCTFSafariViewController */ = {
+		6524D40E1D2FAE0F0060C92E /* RCTSFSafariViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6524D4181D2FAE0F0060C92E /* Build configuration list for PBXNativeTarget "RCTFSafariViewController" */;
+			buildConfigurationList = 6524D4181D2FAE0F0060C92E /* Build configuration list for PBXNativeTarget "RCTSFSafariViewController" */;
 			buildPhases = (
 				6524D40B1D2FAE0F0060C92E /* Sources */,
 				6524D40C1D2FAE0F0060C92E /* Frameworks */,
@@ -71,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = RCTFSafariViewController;
+			name = RCTSFSafariViewController;
 			productName = RNSFSafariViewController;
-			productReference = 6524D40F1D2FAE0F0060C92E /* libRCTFSafariViewController.a */;
+			productReference = 6524D40F1D2FAE0F0060C92E /* libRCTSFSafariViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +90,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6524D40A1D2FAE0F0060C92E /* Build configuration list for PBXProject "RCTFSafariViewController" */;
+			buildConfigurationList = 6524D40A1D2FAE0F0060C92E /* Build configuration list for PBXProject "RCTSFSafariViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -102,7 +102,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6524D40E1D2FAE0F0060C92E /* RCTFSafariViewController */,
+				6524D40E1D2FAE0F0060C92E /* RCTSFSafariViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -112,7 +112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6524D41D1D2FB11A0060C92E /* RCTFSafariViewController.m in Sources */,
+				6524D41D1D2FB11A0060C92E /* RCTSFSafariViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RCTFSafariViewController;
+				PRODUCT_NAME = RCTSFSafariViewController;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -214,7 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RCTFSafariViewController;
+				PRODUCT_NAME = RCTSFSafariViewController;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -222,7 +222,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6524D40A1D2FAE0F0060C92E /* Build configuration list for PBXProject "RCTFSafariViewController" */ = {
+		6524D40A1D2FAE0F0060C92E /* Build configuration list for PBXProject "RCTSFSafariViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6524D4161D2FAE0F0060C92E /* Debug */,
@@ -231,7 +231,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6524D4181D2FAE0F0060C92E /* Build configuration list for PBXNativeTarget "RCTFSafariViewController" */ = {
+		6524D4181D2FAE0F0060C92E /* Build configuration list for PBXNativeTarget "RCTSFSafariViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6524D4191D2FAE0F0060C92E /* Debug */,

@@ -2,7 +2,13 @@
 
 @implementation RCTSFSafariViewController
 
+@synthesize bridge = _bridge;
+
 RCT_EXPORT_MODULE();
+
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+  [self.bridge.eventDispatcher sendAppEventWithName:@"SFSafariViewControllerDismissed" body:nil];
+}
 
 RCT_EXPORT_METHOD(openURL:(NSString *)urlString params:(NSDictionary *)params) {
   NSURL *url = [[NSURL alloc] initWithString:urlString];
@@ -20,7 +26,9 @@ RCT_EXPORT_METHOD(openURL:(NSString *)urlString params:(NSDictionary *)params) {
   }
   
   dispatch_async(dispatch_get_main_queue(), ^{
-    [rootViewController presentViewController:navigationController animated:YES completion:nil];
+    [rootViewController presentViewController:navigationController animated:YES completion:^{
+      [self.bridge.eventDispatcher sendDeviceEventWithName:@"SFSafariViewControllerDidLoad" body:nil];
+    }];
   });
 }
 

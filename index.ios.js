@@ -9,6 +9,8 @@ var {
   NativeModules: {
     SFSafariViewController,
   },
+  NativeAppEventEmitter,
+  DeviceEventEmitter,
   processColor,
 } = React;
 
@@ -20,6 +22,22 @@ var RCTSFSafariViewControllerExport = {
       parsedOptions.tintColor = processColor(options.tintColor);
 
     SFSafariViewController.openURL(url, parsedOptions);
+  },
+
+  addEventListener(eventName, listener) {
+    if(eventName == 'onLoad')
+      NativeAppEventEmitter.addListener('SFSafariViewControllerDidLoad', listener);
+
+    if(eventName == 'onDismiss')
+      NativeAppEventEmitter.addListener('SFSafariViewControllerDismissed', listener);
+  },
+
+  removeEventListener(eventName, listener) {
+    if(eventName == 'onLoad')
+      NativeAppEventEmitter.removeListener('SFSafariViewControllerDidLoad', listener);
+
+    if(eventName == 'onDismiss')
+      NativeAppEventEmitter.removeListener('SFSafariViewControllerDismissed', listener);
   },
 };
 

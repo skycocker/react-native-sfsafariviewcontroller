@@ -28,6 +28,20 @@ RCTSFSafariViewController.open('https://google.com/', {
 });
 ```
 
+## Events
+
+```
+// onLoad (when the modal has fully appeared)
+RCTSFSafariViewController.addEventListener('onLoad', () => console.log('RCTSafariViewController is now visible!'));
+
+// onDismiss (when the user has tapped on 'Done')
+RCTSFSafariViewController.addEventListener('onDismiss', () => console.log('RCTSafariViewController will now disappear'));
+
+// remove listeners once you don't need them anymore
+RCTSFSafariViewController.removeEventListener('onLoad',    this.someLoadListenerReference);
+RCTSFSafariViewController.removeEventListener('onDismiss', this.someDismissListenerReference);
+```
+
 ## License
 (The MIT License)
 

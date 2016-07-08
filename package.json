@@ -1,0 +1,35 @@
+{
+  "name": "react-native-sfsafariviewcontroller",
+  "version": "0.1.0",
+  "description": "An SFSafariViewController wrapper for React Native presenting Safari View in a modal",
+  "main": "index.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skycocker/react-native-sfsafariviewcontroller"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "react",
+    "native",
+    "web",
+    "browser",
+    "webbrowser",
+    "webview",
+    "uiwebview",
+    "SFSafariViewController"
+  ],
+  "author": "Michal Siwek <mike21@aol.pl> (https://github.com/skycocker)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skycocker/react-native-sfsafariviewcontroller/issues"
+  },
+  "homepage": "https://github.com/skycocker/react-native-sfsafariviewcontroller#readme",
+  "peerDependencies": {
+    "react-native": ">=0.5"
+  }
+}

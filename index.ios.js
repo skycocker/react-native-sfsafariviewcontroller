@@ -7,7 +7,7 @@
 var React = require('react-native');
 var {
   NativeModules: {
-    RCTSFSafariViewController,
+    SFSafariViewController,
   },
 } = React;
 

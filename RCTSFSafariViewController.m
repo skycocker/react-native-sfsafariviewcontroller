@@ -22,7 +22,7 @@ RCT_EXPORT_METHOD(openURL:(NSString *)urlString params:(NSDictionary *)params) {
   
   if ([params objectForKey:@"tintColor"]) {
     UIColor *tintColor = [RCTConvert UIColor:params[@"tintColor"]];
-    safariViewController.view.tintColor = tintColor;
+    safariViewController.preferredControlTintColor = tintColor;
   }
   
   dispatch_async(dispatch_get_main_queue(), ^{

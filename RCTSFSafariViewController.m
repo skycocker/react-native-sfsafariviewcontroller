@@ -37,5 +37,9 @@ RCT_EXPORT_METHOD(openURL:(NSString *)urlString params:(NSDictionary *)params) {
   });
 }
 
+RCT_EXPORT_METHOD(close) {
+    UIViewController *rootViewController = [[[UIApplication sharedApplication] delegate] window].rootViewController;
+    [rootViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

@@ -26,6 +26,10 @@ RCTSFSafariViewController.open('https://google.com/');
 RCTSFSafariViewController.open('https://google.com/', {
   tintColor: '#90c3d4',
 });
+
+// Close the browser modal from your React Native code if needed
+RCTSFSafariViewController.close();
+
 ```
 
 ## Events

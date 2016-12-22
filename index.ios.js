@@ -24,6 +24,10 @@ var RCTSFSafariViewControllerExport = {
     SFSafariViewController.openURL(url, parsedOptions);
   },
 
+  close: function() {
+    SFSafariViewController.close();
+  },
+
   addEventListener(eventName, listener) {
     if(eventName == 'onLoad')
       NativeAppEventEmitter.addListener('SFSafariViewControllerDidLoad', listener);

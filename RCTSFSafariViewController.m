@@ -14,6 +14,10 @@ RCT_EXPORT_METHOD(openURL:(NSString *)urlString params:(NSDictionary *)params) {
   NSURL *url = [[NSURL alloc] initWithString:urlString];
 
   UIViewController *rootViewController = [[[UIApplication sharedApplication] delegate] window].rootViewController;
+  while (rootViewController.presentedViewController) {
+    rootViewController = rootViewController.presentedViewController;
+  }
+
   SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:safariViewController];
 

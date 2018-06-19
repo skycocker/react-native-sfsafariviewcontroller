@@ -44,6 +44,11 @@ RCTSFSafariViewController.addEventListener('onDismiss', () => console.log('RCTSa
 // remove listeners once you don't need them anymore
 RCTSFSafariViewController.removeEventListener('onLoad',    this.someLoadListenerReference);
 RCTSFSafariViewController.removeEventListener('onDismiss', this.someDismissListenerReference);
+
+// alternative approach
+const subscription = RCTSFSafariViewController.addEventListener('onLoad', () => console.log('RCTSafariViewController is now visible!'));
+RCTSFSafariViewController.removeEventListener(subscription);
+
 ```
 
 ## License

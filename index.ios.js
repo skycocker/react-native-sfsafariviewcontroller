@@ -30,10 +30,10 @@ var RCTSFSafariViewControllerExport = {
 
   addEventListener(eventName, listener) {
     if(eventName == 'onLoad')
-      NativeAppEventEmitter.addListener('SFSafariViewControllerDidLoad', listener);
+      return NativeAppEventEmitter.addListener('SFSafariViewControllerDidLoad', listener);
 
     if(eventName == 'onDismiss')
-      NativeAppEventEmitter.addListener('SFSafariViewControllerDismissed', listener);
+      return NativeAppEventEmitter.addListener('SFSafariViewControllerDismissed', listener);
   },
 
   removeEventListener(eventName, listener) {
@@ -43,6 +43,10 @@ var RCTSFSafariViewControllerExport = {
     if(eventName == 'onDismiss')
       NativeAppEventEmitter.removeListener('SFSafariViewControllerDismissed', listener);
   },
+
+  removeEventListener(subscription) {
+    subscription.remove();
+  }
 };
 
 module.exports = RCTSFSafariViewControllerExport;

@@ -42,10 +42,6 @@ var RCTSFSafariViewControllerExport = {
 
     if(eventName == 'onDismiss')
       NativeAppEventEmitter.removeListener('SFSafariViewControllerDismissed', listener);
-  },
-
-  removeEventListener(subscription) {
-    subscription.remove();
   }
 };
 
